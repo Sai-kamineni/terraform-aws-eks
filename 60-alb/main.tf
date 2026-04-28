@@ -71,7 +71,7 @@ resource "aws_lb_target_group" "expense" {
   port     = 80
   protocol = "HTTP"
   vpc_id   = local.vpc_id
-  target_type = "ip"
+  target_type = "ip"                   #this is the d/f b/w in VM and pod(IP based)
 
   health_check {
     healthy_threshold = 2
